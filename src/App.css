@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+*{
+  margin: 25px;
+  
+}
+body{
+  font-family: "Istok Web",sans-serif;
+}
