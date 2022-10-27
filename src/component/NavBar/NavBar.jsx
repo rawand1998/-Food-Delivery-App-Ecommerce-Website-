@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo.png";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import { FaUserAlt, FaCartArrowDown } from "react-icons/fa";
 function NavBar() {
   return (
@@ -44,7 +44,10 @@ function NavBar() {
         </span>
         <span className="user_icon">
           <i class="ri-user-line"></i>
-          <FaUserAlt  className="icon "/>
+          <Link to="login">
+          <FaUserAlt  className="icon"/>
+          </Link>
+          
           <span className="user_icon_no">0</span>
         </span>
       </div>
