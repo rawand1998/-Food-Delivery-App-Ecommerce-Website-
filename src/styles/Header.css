@@ -1,0 +1,94 @@
+.header_container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+
+}
+
+.header_image {
+  width: 500px;
+  height: 500px;
+}
+.header_image img {
+  width: 100%;
+  height: 100%;
+}
+.header_content {
+  width: 456px;
+  height: 456px;
+}
+.header_content h5 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #212529;
+}
+.header_content h1 {
+  font-size: 45px;
+}
+.header_content h1 span {
+  color: #df2020;
+  font-weight: bold;
+}
+.header_content p {
+  font-size: 1rem;
+  line-height: 30px;
+  color: #777;
+}
+.header_btn{
+   margin-top: 25px;
+}
+.header_btn a {
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+
+}
+.order_header {
+  background-color: #df2020;
+  color: #fff;
+  border: none;
+}
+.order_header:hover{
+    background-color: #212245;
+    color: #fff;
+}
+.food_header {
+  border: 1px solid #df2020;
+  color: #df2020;
+  margin-left: 25px;
+}
+.header_para {
+  display: flex;
+  font-weight: bold;
+  gap: 3rem;
+  align-items: center;
+
+  margin-top: 25px;
+}
+
+.para_icon {
+  padding: 5px;
+  background: #df2020;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 500 !important;
+}
+.header_para p {
+  align-items: center;
+  color: #212245;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .header_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    flex-direction: column;
+  
+  }
+}

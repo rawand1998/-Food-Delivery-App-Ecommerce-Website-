@@ -19,12 +19,12 @@
   }
   
   .logo h5 {
-    font-weight: 600;
+    font-weight: bold;
     font-size: 1rem;
     color: #212245;
-    margin-top: -1px;
+    margin-top: -0.45px;
     margin-bottom: 0;
-    margin-left: -50px
+    margin-left: -60px
   }
 .nav .logo h5 {
   font-weight: bold;
