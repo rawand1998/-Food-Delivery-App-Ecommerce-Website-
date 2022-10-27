@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../component/Header/Header";
-
+import { FaCheck } from "react-icons/fa";
 function Home() {
   let categoty = [
     {
@@ -40,6 +40,26 @@ function Home() {
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
     },
   ];
+  let list = [
+    {
+      name: "Fresh and tasty foods",
+      icon: <FaCheck />,
+      describe:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.",
+    },
+    {
+      name: "Quality support",
+      icon: <FaCheck />,
+      describe:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.",
+    },
+    {
+      name: "Order from any location",
+      icon: <FaCheck />,
+      describe:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.",
+    },
+  ];
   return (
     <div>
       <Header />
@@ -76,6 +96,36 @@ function Home() {
               <p>{describe}</p>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* food filter section */}
+      {/* testy section */}
+      <div className="testy_container">
+        <div className="testy_img">
+          <img
+            src="https://food-delivery-ecommerce-app.netlify.app/static/media/location.c2a80861.png"
+            alt="not found"
+          />
+        </div>
+        <div className="testy_content">
+          <h2>
+            Why <span>Tasty Treat?</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+            minus. Tempora reprehenderit a corporis velit, laboriosam vitae
+            ullam, repellat illo sequi odio esse iste fugiat dolor, optio
+            incidunt eligendi deleniti!
+          </p>
+          <nav>
+            {list.map(({name,icon,describe})=>(
+              <li>
+                <p className="name_testy"><span className="testy_icon">{icon}</span>{name}</p>
+                <p>{describe}</p>
+              </li>
+            ))}
+          </nav>
         </div>
       </div>
     </div>
