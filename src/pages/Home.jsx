@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../component/Header/Header";
 import { FaCheck } from "react-icons/fa";
 import Testimonal from "../component/UI/Slider/Testimonal";
+import Footer from "../component/Footer/Footer";
 function Home() {
   let categoty = [
     {
@@ -183,6 +184,7 @@ function Home() {
           />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

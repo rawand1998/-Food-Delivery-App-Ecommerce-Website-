@@ -1,13 +1,13 @@
 
 import './styles/index';
 import Layout from './component/Layout/Layout';
-import Testimonal from './component/UI/Slider/Testimonal';
+import Footer from './component/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-   <Layout/>
-   {/* <Testimonal/> */}
+   {/* <Layout/> */}
+  <Footer/>
     </div>
   );
 }
