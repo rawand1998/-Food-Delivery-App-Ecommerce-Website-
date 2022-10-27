@@ -60,6 +60,12 @@ function Home() {
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.",
     },
   ];
+  let pizza =[
+    {img:"https://food-delivery-ecommerce-app.netlify.app/static/media/product_2.1.f1538554.jpg",name:"Vegetarian Pizza"},
+    {img:"https://food-delivery-ecommerce-app.netlify.app/static/media/product_3.1.9c207cdf.jpg",name:"Double Cheese Margherita"},
+    {img:"https://food-delivery-ecommerce-app.netlify.app/static/media/product_4.1.3c8ecc49.jpg",name:"Maxican Green Wave"},
+    {img:"https://food-delivery-ecommerce-app.netlify.app/static/media/product_2.2.4967c9cb.jpg",name:"Seafood Pizza"},
+  ]
   return (
     <div>
       <Header />
@@ -127,6 +133,19 @@ function Home() {
             ))}
           </nav>
         </div>
+      </div>
+
+      <div className="pizza_hot">
+        {pizza.map(({name,img})=>(
+          <div className="pizza_block">
+            <img src={img} alt="" />
+          <h3>{name}</h3>
+          <div className="pizza_hot_price">
+            <span>100$</span>
+            <button>Add to Cart</button>
+          </div>
+          </div>
+        ))}
       </div>
     </div>
   );
