@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../component/Header/Header";
 import { FaCheck } from "react-icons/fa";
+import Testimonal from "../component/UI/Slider/Testimonal";
 function Home() {
   let categoty = [
     {
@@ -60,12 +61,24 @@ function Home() {
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.",
     },
   ];
-  let pizza =[
-    {img:"https://food-delivery-ecommerce-app.netlify.app/static/media/product_2.1.f1538554.jpg",name:"Vegetarian Pizza"},
-    {img:"https://food-delivery-ecommerce-app.netlify.app/static/media/product_3.1.9c207cdf.jpg",name:"Double Cheese Margherita"},
-    {img:"https://food-delivery-ecommerce-app.netlify.app/static/media/product_4.1.3c8ecc49.jpg",name:"Maxican Green Wave"},
-    {img:"https://food-delivery-ecommerce-app.netlify.app/static/media/product_2.2.4967c9cb.jpg",name:"Seafood Pizza"},
-  ]
+  let pizza = [
+    {
+      img: "https://food-delivery-ecommerce-app.netlify.app/static/media/product_2.1.f1538554.jpg",
+      name: "Vegetarian Pizza",
+    },
+    {
+      img: "https://food-delivery-ecommerce-app.netlify.app/static/media/product_3.1.9c207cdf.jpg",
+      name: "Double Cheese Margherita",
+    },
+    {
+      img: "https://food-delivery-ecommerce-app.netlify.app/static/media/product_4.1.3c8ecc49.jpg",
+      name: "Maxican Green Wave",
+    },
+    {
+      img: "https://food-delivery-ecommerce-app.netlify.app/static/media/product_2.2.4967c9cb.jpg",
+      name: "Seafood Pizza",
+    },
+  ];
   return (
     <div>
       <Header />
@@ -125,9 +138,12 @@ function Home() {
             incidunt eligendi deleniti!
           </p>
           <nav>
-            {list.map(({name,icon,describe})=>(
+            {list.map(({ name, icon, describe }) => (
               <li>
-                <p className="name_testy"><span className="testy_icon">{icon}</span>{name}</p>
+                <p className="name_testy">
+                  <span className="testy_icon">{icon}</span>
+                  {name}
+                </p>
                 <p>{describe}</p>
               </li>
             ))}
@@ -136,16 +152,36 @@ function Home() {
       </div>
 
       <div className="pizza_hot">
-        {pizza.map(({name,img})=>(
+        {pizza.map(({ name, img }) => (
           <div className="pizza_block">
             <img src={img} alt="" />
-          <h3>{name}</h3>
-          <div className="pizza_hot_price">
-            <span>100$</span>
-            <button>Add to Cart</button>
-          </div>
+            <h3>{name}</h3>
+            <div className="pizza_hot_price">
+              <span>100$</span>
+              <button>Add to Cart</button>
+            </div>
           </div>
         ))}
+      </div>
+      <div className="testimonal_container">
+        <div className="testimonal_content">
+          <h5>Testimonial</h5>
+          <h2>
+            What our <span>customers</span>are saying
+          </h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quasi qui minus quos sit perspiciatis inventore quis provident placeat fugiat!
+
+          <br/> <br/>
+           
+          </p>
+          <Testimonal/>
+        </div>
+        <div className="testimonal_image">
+          <img
+            src="https://food-delivery-ecommerce-app.netlify.app/static/media/network.7deb539d.png"
+            alt="not found"
+          />
+        </div>
       </div>
     </div>
   );
