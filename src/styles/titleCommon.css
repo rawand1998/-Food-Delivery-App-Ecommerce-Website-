@@ -1,0 +1,17 @@
+.login_image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  padding: 80px 0;
+  object-fit: cover;
+  background-image: linear-gradient(
+      rgba(33, 34, 69, 0.6980392156862745),
+      rgba(33, 34, 69, 0.6980392156862745)
+    ),
+    url("../assets/banner-02.jpg");
+}
+.login_image h2 {
+  color: #fff;
+  padding-left: 120px;
+  font-size: 2rem;
+}
