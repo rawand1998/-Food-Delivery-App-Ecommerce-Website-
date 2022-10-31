@@ -1,12 +1,12 @@
 import React from "react";
+import Title from "../component/common/Title";
+
 import Footer from "../component/Footer/Footer";
 
 function Login() {
   return (
     <div>
-      <div className="login_image">
-        <h2>Login</h2>
-      </div>
+     <Title title="Login"/>
       <form action="" className="login">
         <input type="text" placeholder="Email" />
         <input type="text" placeholder="Password" />

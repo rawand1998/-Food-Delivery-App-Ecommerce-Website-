@@ -1,17 +1,4 @@
-.login_image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-  padding: 80px 0;
-  object-fit: cover;
-  background-image: url("../assets/banner-02.jpg");
-  /* background: linear-gradient(rgba(48, 54, 136, 0.698),rgba(235, 235, 236, 0.698)),url('../assets/banner-02.jpg'); */
-}
-.login_image h2 {
-  color: #fff;
-  padding-left: 120px;
-  font-size: 2rem;
-}
+
 .login {
   width: 25%;
   margin: auto;
