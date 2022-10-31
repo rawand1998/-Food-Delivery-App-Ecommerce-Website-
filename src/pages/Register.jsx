@@ -5,7 +5,7 @@ import Title from '../component/common/Title'
 function Register() {
   return (
     <div>
-        <Title title="Sign Up"/>
+      <Title title="Sign Up"/>
     <form action="" className="auth register">
       <input type="text" placeholder="Full Name" />
       <input type="text" placeholder="Email" />
