@@ -8,10 +8,10 @@
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  gap: 1rem;
+  gap: 1.5rem;
   height: 150px;
 }
-.login input {
+.auth input {
   width: 100%;
   background: transparent;
   padding: 7px 0px;
@@ -27,13 +27,26 @@
   font-size: 0.9rem;
   width: 25%;
   margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .login_para {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
   cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  margin: auto;
 }
 .login_para:hover {
   color: #0d6efd;
+}
+.register{
+    height: 200px;
 }
 @media only screen and (max-width: 768px) {
   .login {

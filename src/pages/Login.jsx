@@ -2,6 +2,7 @@ import React from "react";
 import Title from "../component/common/Title";
 
 import Footer from "../component/Footer/Footer";
+import {Link} from 'react-router-dom'
 
 function Login() {
   return (
@@ -12,7 +13,7 @@ function Login() {
         <input type="text" placeholder="Password" />
         <button className="auth_btn">Login</button>
       </form>
-      <p className="login_para">Don't have an account? Create an account</p>
+      <Link className="login_para" to="/register">Don't have an account? Create an account</Link>
       <Footer />
     </div>
   );
