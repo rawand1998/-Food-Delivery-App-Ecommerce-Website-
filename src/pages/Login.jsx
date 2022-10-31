@@ -8,7 +8,7 @@ function Login() {
   return (
     <div>
      <Title title="Login"/>
-      <form action="" className="login">
+      <form action="" className="auth">
         <input type="text" placeholder="Email" />
         <input type="text" placeholder="Password" />
         <button className="auth_btn">Login</button>

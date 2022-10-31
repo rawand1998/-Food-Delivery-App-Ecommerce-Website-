@@ -1,12 +1,11 @@
 import React from 'react'
 import Footer from '../component/Footer/Footer'
 import {Link} from 'react-router-dom'
+import Title from '../component/common/Title'
 function Register() {
   return (
     <div>
-    <div className="login_image">
-      <h2>Signup</h2>
-    </div>
+      <Title title="Sign Up"/>
     <form action="" className="auth register">
       <input type="text" placeholder="Full Name" />
       <input type="text" placeholder="Email" />
