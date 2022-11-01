@@ -3,6 +3,7 @@ import Header from "../component/Header/Header";
 import { FaCheck } from "react-icons/fa";
 import Testimonal from "../component/UI/Slider/Testimonal";
 import Footer from "../component/Footer/Footer";
+import FoodCard from "../component/common/FoodCard";
 
 function Home() {
   let categoty = [
@@ -67,10 +68,12 @@ function Home() {
     {
       img: "https://food-delivery-ecommerce-app.netlify.app/static/media/product_2.1.f1538554.jpg",
       name: "Vegetarian Pizza",
+      price: 100,
     },
     {
       img: "https://food-delivery-ecommerce-app.netlify.app/static/media/product_3.1.9c207cdf.jpg",
       name: "Double Cheese Margherita",
+      price: 200,
     },
     {
       img: "https://food-delivery-ecommerce-app.netlify.app/static/media/product_4.1.3c8ecc49.jpg",
@@ -79,6 +82,7 @@ function Home() {
     {
       img: "https://food-delivery-ecommerce-app.netlify.app/static/media/product_2.2.4967c9cb.jpg",
       name: "Seafood Pizza",
+      price: 80,
     },
   ];
   let popularFoodList = [
@@ -155,15 +159,8 @@ function Home() {
         </div>
 
         <div className="pizza_hot foods_filters">
-          {pizza.map(({ name, img }) => (
-            <div className="pizza_block">
-              <img src={img} alt="" />
-              <h3>{name}</h3>
-              <div className="pizza_hot_price">
-                <span>100$</span>
-                <button>Add to Cart</button>
-              </div>
-            </div>
+          {pizza.map(({ name, img, price }) => (
+            <FoodCard name={name} img={img} price={price} />
           ))}
         </div>
       </div>

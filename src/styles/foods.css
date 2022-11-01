@@ -1,0 +1,32 @@
+.food_nav{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+}
+.search{
+    border: 1px solid #f00;
+    width: 456px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 7px 15px;
+    border: 1px solid #fde4e4;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.search input{
+    border: none;
+    background-color: #fff;
+    outline: none;
+}
+.input_select{
+    padding: 7px 15px ;
+    border: 1px solid #fde4e4 ;
+    border-radius: 5px ;
+    cursor: pointer ;
+    width: 228px;
+}
