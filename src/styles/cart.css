@@ -1,0 +1,41 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+
+  .total_price{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .total_price span{
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .total_price span>span{
+    color: rgb(196, 21, 21);
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .btn_total a {
+    border: none;
+    padding: 7px 25px;
+    background: #df2020;
+    color: #fff;
+    border-radius: 5px;
+    font-size: .9rem;
+    text-decoration: none;
+  }
+  .btn_total a:nth-child(2){
+    margin-left: 15px;
+  }
