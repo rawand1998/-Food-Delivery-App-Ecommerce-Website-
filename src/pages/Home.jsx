@@ -176,7 +176,7 @@ function Home() {
           <h2>
             Why <span>Tasty Treat?</span>
           </h2>
-          <p>
+          <p className="para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
             minus. Tempora reprehenderit a corporis velit, laboriosam vitae
             ullam, repellat illo sequi odio esse iste fugiat dolor, optio
@@ -195,8 +195,9 @@ function Home() {
           </nav>
         </div>
       </div>
-
+      <h2 className="hot">Hot Pizza</h2>
       <div className="pizza_hot">
+       
         {pizza.map(({ name, img }) => (
           <div className="pizza_block">
             <img src={img} alt="" />

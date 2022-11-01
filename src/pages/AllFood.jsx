@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Title from "../component/common/Title";
 import { FaSearch } from "react-icons/fa";
 import FoodCard from "../component/common/FoodCard";
+import Footer from "../component/Footer/Footer";
 function AllFood() {
   const currencies = [
     {
@@ -87,13 +88,12 @@ function AllFood() {
         </div>
       </div>
 
-
-      <div className="pizza_hot foods_filters">
-          {foods.map(({ name, img, price }) => (
-            <FoodCard name={name} img={img} price={price} />
-          ))}
-        </div>
-
+      <div className="pizza_hot foods_filters all_food">
+        {foods.map(({ name, img, price }) => (
+          <FoodCard name={name} img={img} price={price} />
+        ))}
+      </div>
+      <Footer />
     </div>
   );
 }
