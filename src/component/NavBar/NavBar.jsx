@@ -1,37 +1,46 @@
 import React from "react";
 import logo from "../../assets/logo.png";
-import { NavLink,Link } from "react-router-dom";
-import { FaUserAlt, FaCartArrowDown } from "react-icons/fa";
+import { NavLink, Link } from "react-router-dom";
+import { FaCartArrowDown } from "react-icons/fa";
+import { BiUser, BiBasket } from "react-icons/bi";
 function NavBar() {
   return (
     <div className="nav">
-          <div className="logo">
-            <img src={logo} alt="logo" />
-            <h5>Tasty Treat</h5>
-          </div>
+      <div className="logo">
+        <img src={logo} alt="logo" />
+        <h5 className="logo_title">Tasty Treat</h5>
+      </div>
 
       <nav>
         <NavLink
           to="/"
-          className={({ isActive }) => (isActive ? "activeClassName" : "default")}
+          className={({ isActive }) =>
+            isActive ? "activeClassName" : "default"
+          }
         >
           Home
         </NavLink>
         <NavLink
           to="/allfood"
-          className={({ isActive }) => (isActive ? "activeClassName" : "default")}
+          className={({ isActive }) =>
+            isActive ? "activeClassName" : "default"
+          }
         >
-          Food
+          Foods
         </NavLink>
         <NavLink
           to="/cart"
-          className={({ isActive }) => (isActive ? "activeClassName" : "default")}
+          className={({ isActive }) =>
+            isActive ? "activeClassName" : "default"
+          }
         >
           Cart
         </NavLink>
         <NavLink
           to="/contact"
-          className={({ isActive }) => (isActive ? "activeClassName" : "default")}
+          className={({ isActive }) =>
+            isActive ? "activeClassName" : "default"
+          }
         >
           Contact
         </NavLink>
@@ -39,16 +48,13 @@ function NavBar() {
 
       <div className="menu">
         <span className="cart">
-          <FaCartArrowDown className="icon" />
-         
+          <BiBasket className="icon" />
         </span>
         <span className="user_icon">
-          <i class="ri-user-line"></i>
           <Link to="login">
-          <FaUserAlt  className="icon"/>
+            <BiUser className="icon" />
           </Link>
-          
-          <span className="user_icon_no">0</span>
+          <span className="user_icon_no">1</span>
         </span>
       </div>
     </div>
