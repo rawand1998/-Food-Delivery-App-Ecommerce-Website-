@@ -30,3 +30,18 @@
     cursor: pointer ;
     width: 228px;
 }
+.all_food{
+    width: 93%;
+    margin: auto;
+    margin-top: 50px;
+}
+@media only screen and (max-width: 768px) {
+    .food_nav{
+        display: flex;
+        justify-content: space-evenly;
+        width: 85%;
+        margin: auto;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+}

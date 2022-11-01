@@ -31,6 +31,7 @@
   color: #777;
   margin-top: 0;
   margin-bottom: 1rem;
+  line-height: 28px;
 }
 .about_images {
   display: flex;
@@ -62,13 +63,14 @@
   margin-bottom: 1rem;
 }
 .about_img_block img {
-  width: 49px;
-  height: 41px;
+  width: 25%;
+  height: 25%;
   margin-bottom: 1rem !important;
 }
 .testy_container {
   display: flex;
   justify-content: space-around;
+  margin-top: 50px;
 }
 .testy_container .testy_img {
   width: 500px;
@@ -98,13 +100,14 @@
   line-height: 28px;
   gap: 0.5rem !important;
 }
+
 .testy_content nav {
   list-style: none;
 }
 .name_testy {
   color: #212245 !important;
   font-size: 1rem !important;
-  font-weight: 600;
+  font-weight: 700;
 }
 .testy_icon {
   color: #df2020;
@@ -119,21 +122,27 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
+ 
+}
+.hot{
+ text-align: center;
+ padding: 20px;
 }
 .pizza_block {
   width: 15%;
-  border: 1px solid #df2020;
-  align-items: center;
-  display: flex;
   flex-direction: column;
   border: 1px solid #fde4e4;
   text-align: center;
   padding: 30px;
   cursor: pointer;
 }
+.pizza_block h3 {
+  color: #212245;
+  font-size: 1rem;
+}
 .pizza_hot_price {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
@@ -150,6 +159,10 @@
   border-radius: 4px;
   padding: 7px 20px;
 }
+.pizza_hot h2{
+  margin: auto;
+
+}
 .pizza_block img {
   width: 77px;
   height: 77px;
@@ -163,6 +176,7 @@
 .testimonal_container {
   display: flex;
   justify-content: space-around;
+  margin-top: 50px;
 }
 .testimonal_image {
   width: 456px;
