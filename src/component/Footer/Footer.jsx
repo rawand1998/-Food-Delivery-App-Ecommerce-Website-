@@ -21,15 +21,15 @@ function Footer() {
           </p>
         </div>
         <div className="footer footer_delivery_time">
-          <h5 className="footer_label">Delivery Time</h5>
+          <h5 className="footer_label">Delivery Time</h5><br/><br/>
           <span className="footer_lable_day sunday">Sunday - Thursday</span>
-          <span>10:00am - 11:00pm</span>
+          <span className="subtitle">10:00am - 11:00pm</span>
           <br /> <br />
           <span className="footer_lable_day">Friday - Saturday</span>
           <span>Off day</span>
         </div>
         <div className="footer footer_contact">
-          <h5 className="footer_label">Contact</h5>
+          <h5 className="footer_label">Contact</h5><br/><br/>
           <p className="subtitle">
             Location: ZindaBazar,
             <br /> Sylhet-3100, Bangladesh
@@ -40,7 +40,7 @@ function Footer() {
           <span className="footer_lable_day">Email: example@gmail.com</span>
         </div>
         <div className=" footer footer_news">
-          <h5 className="footer_label">NewsLetter</h5>
+          <h5 className="footer_label">NewsLetter</h5><br/><br/>
           <p className="subtitle">Subscribe our newsletter</p>
           <input type="text" placeholder="Enter your email" />
         </div>
