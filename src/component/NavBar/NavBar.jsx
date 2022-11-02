@@ -3,7 +3,9 @@ import logo from "../../assets/logo.png";
 import { NavLink, Link } from "react-router-dom";
 import { FaCartArrowDown } from "react-icons/fa";
 import { BiUser, BiBasket } from "react-icons/bi";
+import{useSelector} from 'react-redux'
 function NavBar() {
+  const totalQuantity = useSelector((state)=>state.cart.totalQuantity)
   return (
     <div className="nav">
       <div className="logo">
@@ -54,7 +56,7 @@ function NavBar() {
           <Link to="login">
             <BiUser className="icon" />
           </Link>
-          <span className="user_icon_no">1</span>
+          <span className="user_icon_no">{totalQuantity}</span>
         </span>
       </div>
     </div>
