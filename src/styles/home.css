@@ -278,6 +278,22 @@
   margin-top: 25px;
   flex-wrap: wrap;
 }
+.paginationBttns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 25px;
+}
+.paginationBttns a {
+  padding: 5px 13px;
+  background: #212245;
+  color: #fff!important;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+
+}
 @media only screen and (max-width: 768px) {
   .about_images {
     flex-direction: column;
