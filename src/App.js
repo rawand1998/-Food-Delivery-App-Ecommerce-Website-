@@ -1,11 +1,10 @@
-
-import './styles/index';
-import Layout from './component/Layout/Layout';
+import "./styles/index";
+import Layout from "./component/Layout/Layout";
 
 function App() {
   return (
     <div className="App">
-   <Layout/>
+      <Layout />
     </div>
   );
 }
