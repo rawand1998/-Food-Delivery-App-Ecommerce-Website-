@@ -175,8 +175,8 @@ function Home() {
         </div>
 
         <div className="pizza_hot foods_filters">
-          {products.map(({ name, image01, price }) => (
-            <FoodCard name={name} img={image01} price={price} />
+          {products.map(({ title, image01, price }) => (
+            <FoodCard name={title} img={image01} price={price} />
           ))}
         </div>
       </div>
