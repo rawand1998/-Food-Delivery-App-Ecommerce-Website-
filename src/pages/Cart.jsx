@@ -37,7 +37,7 @@ function Cart() {
               <td>{item.price}$</td>
               <td>{item.quantity}</td>
               <td onClick={()=>deleteItem(item.id)}>
-                <FaTrash />
+                <FaTrash className="trash_icon"/>
               </td>
             </tr>
           ))}
@@ -46,11 +46,11 @@ function Cart() {
 
       <div className="total_price">
         <span>
-          Subtotal: $<span>{totalAmount}</span>
-        </span>
-        <p>Taxes and shipping will calculate at checkout</p>
+          Subtotal: $<span>{totalAmount}</span><br/>
+        </span><br/>
+        <p>Taxes and shipping will calculate at checkout</p><br/>
         <div className="btn_total">
-          <Link>Contiune shopping</Link>
+          <Link to="/allfood">Contiune shopping</Link>
           <Link>Proceed to checkout</Link>
         </div>
       </div>
