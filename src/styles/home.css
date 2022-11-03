@@ -124,14 +124,13 @@
   gap: 3rem;
   width: 80%;
   margin: auto;
- 
 }
-.hot{
- text-align: center;
- padding: 20px;
- font-size: 2.1rem;
- font-weight: 600;
- color: #212245;
+.hot {
+  text-align: center;
+  padding: 20px;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #212245;
 }
 .pizza_block {
   width: 230px;
@@ -140,7 +139,6 @@
   text-align: center;
   padding: 30px 0px;
   cursor: pointer;
-
 }
 .pizza_block h3 {
   color: #212245;
@@ -151,8 +149,8 @@
   justify-content: space-evenly;
   align-items: center;
   width: 200px;
+  
   padding: 10px 0px;
-
 }
 .pizza_hot_price span {
   font-weight: bold;
@@ -167,9 +165,8 @@
   border-radius: 4px;
   padding: 7px 20px;
 }
-.pizza_hot h2{
+.pizza_hot h2 {
   margin: auto;
-
 }
 .pizza_block img {
   width: 77px;
@@ -179,16 +176,15 @@
 .pizza_block img:hover {
   transform: scale(1.2);
 }
-.blocks{
+.blocks {
   width: 84%;
   line-height: 30px;
 }
-.blocks .pizza_block{
+.blocks .pizza_block {
   width: 50%;
 }
-.blocks  .pizza_hot_price{
+.blocks .pizza_hot_price {
   width: 100%;
-
 }
 /* testimonal component */
 .testimonal_container {
@@ -212,7 +208,6 @@
   color: #df2020;
   font-size: 1.25rem;
   font-weight: 500;
- 
 }
 .testimonal_content h2 {
   color: #212245;
@@ -293,7 +288,7 @@
   margin-top: 25px;
   flex-wrap: wrap;
 }
-.paginationBttns{
+.paginationBttns {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,11 +298,10 @@
 .paginationBttns a {
   padding: 5px 13px;
   background: #212245;
-  color: #fff!important;
+  color: #fff !important;
   border-radius: 5px;
   cursor: pointer;
   margin: 5px;
-
 }
 @media only screen and (max-width: 768px) {
   .about_images {
@@ -322,8 +316,7 @@
     flex-direction: column;
   }
   .pizza_block {
-    width: 30%;
-  
+    width: 40%;
   }
   .pizza_hot {
     display: flex;
@@ -341,11 +334,51 @@
     padding: 2px 20px;
   }
   .pizza_hot_price {
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
   }
   .testimonal_container {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    width: 80%;
+  
+  }
+  .food_category {
+    flex-direction: column;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-left: 5px;
+    margin-right: 0px;
+    padding: 60px 0px;
+    gap: 2rem;
+  }
+  .food_category_block {
+    width: 200px;
+    height: 70px;
+  }
+  .food_category_block img {
+    width: 35px;
+  }
+  .about_content p {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .food_types {
+    gap: 2rem;
+    width: 90%;
+  }
+  .para{
+    font-size: 15px;
+  }
+  .testy_content{
+    line-height: 50px;
+    padding-left: 15px;
+    width: 90%;
+  }
+  .testimonal_content{
+    width: 99%;
+    padding-left: 15px;
   }
 }

@@ -43,5 +43,12 @@
         margin: auto;
         margin-top: 50px;
         flex-direction: column;
+        line-height: 48px;
+    }
+    .search{
+        width: 100%;
+    }
+    .input_select{
+        width: 100%;
     }
 }
