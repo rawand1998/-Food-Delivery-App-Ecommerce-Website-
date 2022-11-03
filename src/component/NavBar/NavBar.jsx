@@ -7,6 +7,7 @@ import{useSelector} from 'react-redux'
 function NavBar() {
   const menuRef = useRef(null);
   const headerRef = useRef(null);
+  const totalQuantity = useSelector((state)=>state.cart.totalQuantity)
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (
