@@ -1,17 +1,39 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import logo from "../../assets/logo.png";
 import { NavLink, Link } from "react-router-dom";
-import { FaCartArrowDown } from "react-icons/fa";
+import { AiOutlineMenu } from "react-icons/ai";
 import { BiUser, BiBasket } from "react-icons/bi";
 function NavBar() {
+  const menuRef = useRef(null);
+  const headerRef = useRef(null);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("header__shrink");
+      } else {
+        headerRef.current.classList.remove("header__shrink");
+      }
+    });
+
+    // return () => window.removeEventListener("scroll");
+  }, []);
+
+  const toggleMenu = () => {
+    console.log("togglemenu");
+    menuRef.current.classList.toggle("show__menu");
+  };
+
   return (
-    <div className="nav">
+    <div className="nav" ref={headerRef}>
       <div className="logo">
         <img src={logo} alt="logo" />
         <h5 className="logo_title">Tasty Treat</h5>
       </div>
 
-      <nav>
+      <nav ref={menuRef} onClick={toggleMenu}>
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -55,6 +77,9 @@ function NavBar() {
             <BiUser className="icon" />
           </Link>
           <span className="user_icon_no">1</span>
+        </span>
+        <span className="mobile__menu">
+          <AiOutlineMenu onClick={toggleMenu} />
         </span>
       </div>
     </div>
