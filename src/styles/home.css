@@ -129,6 +129,9 @@
 .hot{
  text-align: center;
  padding: 20px;
+ font-size: 2.1rem;
+ font-weight: 600;
+ color: #212245;
 }
 .pizza_block {
   width: 230px;
@@ -177,7 +180,17 @@
 .pizza_block img:hover {
   transform: scale(1.2);
 }
+.blocks{
+  width: 84%;
+  line-height: 30px;
+}
+.blocks .pizza_block{
+  width: 50%;
+}
+.blocks  .pizza_hot_price{
+  width: 100%;
 
+}
 /* testimonal component */
 .testimonal_container {
   display: flex;
@@ -193,12 +206,14 @@
   height: 100%;
 }
 .testimonal_content {
-  width: 456px;
+  width: 500px;
+  line-height: 45px;
 }
 .testimonal_content h5 {
   color: #df2020;
   font-size: 1.25rem;
   font-weight: 500;
+ 
 }
 .testimonal_content h2 {
   color: #212245;

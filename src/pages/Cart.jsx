@@ -42,17 +42,25 @@ function Cart() {
           ))}
         </tbody>
       </table>
+<<<<<<< HEAD
 
       <div className="total_price">
         <span>
           Subtotal: $<span>{totalAmount}</span>
         </span>
         <p>Taxes and shipping will calculate at checkout</p>
+=======
+     
+      <div className="total_price">
+        <span>Subtotal: $<span>35</span></span> <br/> <br/>
+        <p>Taxes and shipping will calculate at checkout</p> <br/> <br/>
+>>>>>>> 5362a82751228174dd8283413da175b5caef4205
         <div className="btn_total">
           <Link>Contiune shopping</Link>
           <Link>Proceed to checkout</Link>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
