@@ -38,7 +38,7 @@ function Testimonal() {
     <Slider {...settings}>
       {slider.map(({ img, name, describe }) => (
         <div className="slider_content">
-          <p>{describe}</p>
+          <p>{describe}</p><br/>
           <div className="slider_client">
             <img src={img} alt="not found" />
             <span>{name}</span>

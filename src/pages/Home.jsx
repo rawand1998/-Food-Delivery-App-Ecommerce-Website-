@@ -212,7 +212,7 @@ function Home() {
         </div>
       </div>
       <h2 className="hot">Hot Pizza</h2>
-      <div className="pizza_hot">
+      <div className="pizza_hot blocks">
         {pizza.map(({ name, img }) => (
           <div className="pizza_block">
             <img src={img} alt="" />
