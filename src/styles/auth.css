@@ -9,7 +9,7 @@
   flex-direction: column;
   margin-top: 50px;
   gap: 1.5rem;
-  height: 150px;
+  height: 200px;
 }
 .auth input {
   width: 100%;
@@ -46,7 +46,7 @@
   color: #0d6efd;
 }
 .register{
-    height: 200px;
+    height: 250px;
 }
 @media only screen and (max-width: 768px) {
   .login {
