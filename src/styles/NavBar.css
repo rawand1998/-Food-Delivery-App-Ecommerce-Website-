@@ -32,7 +32,7 @@
   color: #212245;
 }
 .nav nav {
-  display: flex;
+  display: inline-block;
   gap: 1rem;
 }
 .nav nav a {
@@ -84,4 +84,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.header__shrink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 99999;
+  box-shadow: 5px 5px 15px -5px #fde4e4;
+}
+.mobile__menu {
+  display: none;
+  font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  .mobile__menu {
+    display: block;
+    font-weight: 600;
+    margin-right: 15px;
+  }
+  .nav {
+    margin: 0px 15px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav nav {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .user_icon_no {
+    left: 30px;
+  }
+  .show__menu {
+    background-color: #df2020;
+    display: flex !important;
+    position: fixed;
+  }
 }

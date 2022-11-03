@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-around;
   padding-top: 60px;
-
 }
 
 .header_image {
@@ -35,10 +34,10 @@
   line-height: 30px;
   color: #777;
 }
-.header_btn{
-   margin-top: 25px;
-   display: flex;
-   gap: 1.5rem;
+.header_btn {
+  margin-top: 25px;
+  display: flex;
+  gap: 1.5rem;
 }
 .header_btn a {
   border-radius: 5px;
@@ -47,16 +46,15 @@
   cursor: pointer;
   padding: 10px 20px;
   text-decoration: none;
-
 }
 .order_header {
   background-color: #df2020;
   color: #fff;
   border: none;
 }
-.order_header:hover{
-    background-color: #212245;
-    color: #fff;
+.order_header:hover {
+  background-color: #212245;
+  color: #fff;
 }
 .food_header {
   border: 1px solid #df2020;
@@ -68,7 +66,6 @@
   font-weight: bold;
   gap: 3rem;
   align-items: center;
-
   margin-top: 25px;
 }
 
@@ -87,26 +84,22 @@
   gap: 5px;
 }
 
-
 /* food category */
-.food_category
-{
-display: flex;
-align-items: center;
-justify-content: space-between;
-width:85%;
-margin-left: 25px;
-margin-right: 25px;
-padding: 60px 60px;
-
+.food_category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 60px 60px;
 }
-.food_category_block
-{
+.food_category_block {
   background: #fde4e4;
   padding: 30px 20px;
   border-radius: 5px;
   cursor: pointer;
-  transition: .4s;
+  transition: 0.4s;
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -114,11 +107,10 @@ padding: 60px 60px;
   height: 90px;
   transition: all 0.5s;
 }
-.food_category_block:hover{
+.food_category_block:hover {
   transform: translateY(-20px);
-
 }
-.food_category_block h6{
+.food_category_block h6 {
   font-size: 1rem;
 }
 
@@ -126,23 +118,40 @@ padding: 60px 60px;
   .header_container {
     display: flex;
     justify-content: center;
-    padding-top: 60px;
     flex-direction: column;
+    align-items: center;
+  }
+  .header_image img {
+    width: 100%;
+    height: 100%;
   
   }
-  .food_category{
-    flex-direction: column;
-   width: 100%;
-   display: grid;
-   grid-template-columns: repeat(2, 50%);
-   margin-left: 0px;
-margin-right: 0px;
-padding: 60px 0px;
-gap: 2rem;
+  .header_image {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_content {
+   
+    text-align: center;
+  }
+  .header_btn {
+    justify-content: center;
+    align-items: center;
+  }
+  .header_content h1 {
+    font-size: 35px;
+  }
+  .header_para {
+    display: flex;
+    font-weight: bold;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 25px;
+    text-align: center;
+    
+  }
 
-  }
-  .food_category_block{
-    width: 170px;
-    height: 20px;
-  }
 }
