@@ -122,8 +122,14 @@ function AllFood() {
       </div>
 
       <div className="pizza_hot foods_filters all_food">
-        {displayPage.map(({ title, image01, price }) => (
-          <FoodCard title={title} image01={image01} price={price} />
+        {displayPage.map(({ title, image01, price, id }) => (
+          <FoodCard
+            key={id}
+            id={id}
+            title={title}
+            image01={image01}
+            price={price}
+          />
         ))}
       </div>
       <div>
