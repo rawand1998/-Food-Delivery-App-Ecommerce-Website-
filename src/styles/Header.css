@@ -11,10 +11,34 @@
 .header_image img {
   width: 100%;
   height: 100%;
+  animation: myfirstImg 1s;
+}
+@keyframes myfirstImg {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .header_content {
   width: 456px;
   height: 456px;
+  animation: myfirst 1s;
+}
+@keyframes myfirst {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
 }
 .header_content h5 {
   font-weight: bold;
