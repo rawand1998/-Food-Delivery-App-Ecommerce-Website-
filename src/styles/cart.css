@@ -39,3 +39,6 @@ table {
   .btn_total a:nth-child(2){
     margin-left: 15px;
   }
+  .trash_icon{
+    cursor: pointer;
+  }
