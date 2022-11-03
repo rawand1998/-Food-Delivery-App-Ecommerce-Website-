@@ -3,6 +3,7 @@ import logo from "../../assets/logo.png";
 import { NavLink, Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BiUser, BiBasket } from "react-icons/bi";
+import{useSelector} from 'react-redux'
 function NavBar() {
   const menuRef = useRef(null);
   const headerRef = useRef(null);
@@ -76,7 +77,7 @@ function NavBar() {
           <Link to="login">
             <BiUser className="icon" />
           </Link>
-          <span className="user_icon_no">1</span>
+          <span className="user_icon_no">{totalQuantity}</span>
         </span>
         <span className="mobile__menu">
           <AiOutlineMenu onClick={toggleMenu} />
