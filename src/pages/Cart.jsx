@@ -4,6 +4,7 @@ import Title from "../component/common/Title";
 import { useDispatch, useSelector } from "react-redux";
 import { cartActions } from "../store/cartSlice";
 import { FaTrash } from "react-icons/fa";
+import Footer from '../component/Footer/Footer'
 function Cart() {
   const dispatch = useDispatch();
   const cartItem = useSelector((state) => state.cart.cartItems);
@@ -42,19 +43,12 @@ function Cart() {
           ))}
         </tbody>
       </table>
-<<<<<<< HEAD
 
       <div className="total_price">
         <span>
           Subtotal: $<span>{totalAmount}</span>
         </span>
         <p>Taxes and shipping will calculate at checkout</p>
-=======
-     
-      <div className="total_price">
-        <span>Subtotal: $<span>35</span></span> <br/> <br/>
-        <p>Taxes and shipping will calculate at checkout</p> <br/> <br/>
->>>>>>> 5362a82751228174dd8283413da175b5caef4205
         <div className="btn_total">
           <Link>Contiune shopping</Link>
           <Link>Proceed to checkout</Link>
