@@ -19,7 +19,7 @@ const Router =
    {path:"/checkout",  element:<Checkout /> },
    {path:"/login",  element:<Login /> },
    {path:"/register",  element:<Register /> },
-   {path:"/fooddetails",  element:<FoodDetails /> },
+   {path:"/fooddetails/:id",  element:<FoodDetails /> },
    {path:"/contact",  element:<Contact /> },
 ]
 }
