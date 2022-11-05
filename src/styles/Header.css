@@ -11,9 +11,9 @@
 .header_image img {
   width: 100%;
   height: 100%;
-  animation: myfirstImg 1s;
+  /* animation: myfirstImg 1s; */
 }
-@keyframes myfirstImg {
+/* @keyframes myfirstImg {
   from {
     margin-left: 100%;
     width: 300%;
@@ -23,13 +23,13 @@
     margin-left: 0%;
     width: 100%;
   }
-}
+} */
 .header_content {
   width: 456px;
   height: 456px;
-  animation: myfirst 1s;
+  /* animation: myfirst 1s; */
 }
-@keyframes myfirst {
+/* @keyframes myfirst {
   from {
     margin-right: 100%;
     width: 300%;
@@ -39,7 +39,7 @@
     margin-right: 0%;
     width: 100%;
   }
-}
+} */
 .header_content h5 {
   font-weight: bold;
   font-size: 1.5rem;
