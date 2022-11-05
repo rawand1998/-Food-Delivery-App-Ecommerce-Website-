@@ -5,7 +5,18 @@
   height: 106px;
   margin: 0;
   padding: 0;
+   /* animation: navbar 5s 2; */
 }
+
+/* @keyframes navbar {
+  from {
+    margin-top: -50%;
+  }
+
+  to {
+    margin-top: 2%;
+  }
+} */
 .logo {
   text-align: center;
   display: flex;
